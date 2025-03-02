@@ -1,0 +1,203 @@
+*{padding:0;
+    margin:0;
+    box-sizing: border-box;
+    color:#616161;
+    font-family: "Inconsolata", sans-serif;
+
+}
+:root{
+    --default-padding:8px 16px;
+    --wide-padding:12px 24px;
+    --hover-background:#ccc;
+    --max-width:700px;
+    --default-font:18px;
+    --default-weight:400;
+}
+html{
+    scroll-behavior: smooth;
+    position: relative;
+}
+body{
+    background-color: #f7f5f2;
+    filter: grayscale(75%);
+
+}
+nav{
+    background-color: black;
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    padding: var(--default-padding);
+    top: 0;
+    position:sticky;
+    z-index: 1;
+
+}
+nav a,button[type=submit]{
+    background-color: black;
+    display: block;
+    padding:var(--default-padding);
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.5;
+    cursor: pointer;
+    color:white;
+    text-transform: uppercase;
+}
+nav a:hover,button[type=submit]:hover{
+    background-color:var(--hover-background);
+    color:black;
+}
+/*end nav*/
+.hamada{
+    padding:30px
+}
+header{
+    background-image:url("coffeehouse.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 75%;
+    filter: grayscale(50%);
+    position: relative;
+
+}
+header h1{
+    font-size: 90px;
+    text-align: center;
+    color:white;
+    font-weight: var(--default-weight);
+    line-height: 1.5;
+}
+
+header .left,header .right{
+    padding:var(--wide-padding);
+    color: white;
+    font-size: 15px;
+
+}
+header .right{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+header .left P{
+    width:fit-content;
+    background-color:black;
+    padding:0 8px;
+
+}
+/*end header*/
+/*start about*/
+h2{
+    width: fit-content;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 0 auto 48px;
+    padding: 0 8px;
+    text-transform: uppercase;
+    font-size: var(--default-font);
+    font-weight: var(--default-weight);
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+main{
+    padding:0 16px;
+    max-width: 700px;
+    margin:0 auto 0 auto;
+    position: relative;
+
+}
+ p{
+    font-size: var(--default-font);
+    line-height: 1.5;
+    margin: 18px 0;
+
+}
+.special{
+
+    background-color:#eee;
+    border-left: solid 6px #ccc;
+    padding: 1px 16px;
+    margin:16px 0;
+}
+.special *{
+    color:black;
+}
+/*end about*/
+img{
+    margin-top: 32px    ;
+    max-width: 1000px;
+    width: 100%;
+}
+/*start menu*/
+.menu .container .head{
+    padding:var(--default-padding);
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    background-color:white;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+}
+.menu .container .head #eatbtn{
+    background-color:#616161;
+    color:white;
+}
+.head button{
+    border: none;
+    width:99.999999%;
+    padding: 3px 0;
+    text-align:center;
+    font-size:var(--default-font);
+    font-weight: var(--default-weight);
+    background-color:white;
+
+}
+
+.menu .container div{
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    padding:48px 16px;
+}
+#drinkmenu{
+    display: none;
+}
+h5{
+    margin: 10px 0;
+    color:black;
+    font-size: var(--default-font);
+    font-weight: var(--default-weight);
+}
+#menu{
+    margin:18px 0;
+    color:#757575
+}
+/*end menu*/
+.fyi p span{
+    background-color:black;
+    color:white;
+    display:inline-block;
+    padding:0 8px ;
+    text-transform: uppercase;
+}
+/*start form*/
+
+
+
+
+input[type=datetime-local]{
+    color:black;
+}
+input{
+    width:100%;
+    padding:16px 8px;
+    margin:18px 0;
+    font-size: var(--default-font);
+}
+button[type=submit]{
+    border: none;
+}
+form{
+    margin-bottom: 50px;
+}
+/*end form*/
